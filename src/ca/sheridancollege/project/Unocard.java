@@ -84,7 +84,7 @@ public class Unocard
     // The color needs to be specified because if a wild card was chosen in the previous round, the color would have changed, but the card staying the same
     public boolean canPlace(Unocard o, String c)
     {
-        if (this.color == c)
+        if (this.color.equals(c))
             return true;
         else if (this.value == o.value)
             return true;
